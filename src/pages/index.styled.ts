@@ -2,60 +2,52 @@ import styled from "styled-components";
 import { theme } from "@/App.styled";
 
 export const Container = styled.div`
-  
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: top;
 
-    padding-left: ${theme.space["3.125rem"]};
-    padding-top: ${theme.space["5rem"]};
-    padding-right: ${theme.space["5rem"]};
-    padding-bottom: ${theme.space["5rem"]};
-    
-    background-color: ${theme.colors.gray[600]};
-
-    p{
-        
-        line-height:${theme.lineHeights["2rem"]};
-        font-size: ${theme.fontSizes["1.125rem"]};
-        text-align: justify;
-        
-
-        
-    }
+  margin-left: ${theme.space["2rem"]};
+  margin-top: ${theme.space["2rem"]};
+  margin-right: 0px;
 
 
-    .Title{
-        
-        line-height:${theme.lineHeights["2rem"]};
-        font-size: ${theme.fontSizes["1.5rem"]};
-        color: ${theme.colors.cyan[300]};
+  p {
+    padding: ${theme.space["1rem"]};
+    line-height: ${theme.lineHeights["2rem"]};
+    font-size: ${theme.fontSizes["1rem"]};
+    text-align: justify;
+  }
 
-        padding-top: ${theme.space["1.5rem"]};
+  .Title {
+    line-height: ${theme.lineHeights["2rem"]};
+    font-size: ${theme.fontSizes["1.5rem"]};
+    color: ${theme.colors.cyan["300"]};
 
-        font-weight: ${theme.fontWeights.bold};
+    padding-top: ${theme.space["1.5rem"]};
 
-        
-    }
-    
-    .Line{
-        background-color: ${theme.colors.orange[400]};
-        height:${theme.lineHeights["0.125rem"]};
-        width: 100%;
-    }
+    font-weight: ${theme.fontWeights.bold};
+  }
 
-    .Content{
-        text-indent: ${theme.space["2rem"]};
-    }
-    
-    .Date{
-        padding-top: ${theme.space["2.5rem"]};
-    }
 
-    .Date, .Name{
-        font-weight: ${theme.fontWeights.bold};
 
-    }
- 
+  .Content {
+    text-indent: ${theme.space["2rem"]};
+    padding-bottom: 0px;
+  }
+
+  .Date {
+    padding-top: ${theme.space["2.5rem"]};
+    padding-bottom: 0px;
+  }
+
+  .Date {
+    font-weight: ${theme.fontWeights.bold};
+  }
+
+  .ContentGroup {
+    background-color: ${theme.colors.white};
+    border-radius: ${theme.space["0.25rem"]};
+    box-shadow: 0px 0px 0px 1px ${theme.colors.borderColor};
+    margin-bottom: ${theme.space["2rem"]};
+  }
 `;

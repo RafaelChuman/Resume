@@ -5,6 +5,9 @@ export const theme = {
     transparent: "transparent",
     black: "#000",
     white: "#FFFFFF",
+    background: "#f4f2ee",
+    borderColor: "rgb(140 140 140/.2)",
+    textColor: "rgb(0 0 0/.9)",
     gray: {
       // 900: "#171923",
       // 800: "#1A202C",
@@ -43,9 +46,9 @@ export const theme = {
     },
     pink: {
       // 900: "#521B41",
-      // 800: "#C586C0",   
+      800: "#773972",
       // 700: "#97266D",
-       600: "#C586C0",
+      600: "#C586C0",
       // 500: "#D53F8C",
       // 400: "#ED64A6",
       // 300: "#F687B3",
@@ -66,12 +69,12 @@ export const theme = {
       // 100: "#C4F1F9",
       // 50: "#EDFDFD",
     },
-    orange:{
-      400:"#CE9178"
+    orange: {
+      400: "#CE9178",
     },
-    green:{
-      400:"#6A9955"
-    }
+    green: {
+      400: "#6A9955",
+    },
   },
   fonts: {
     body: "Poppins",
@@ -105,9 +108,9 @@ export const theme = {
     black: 900,
   },
   lineHeights: {
-    "0.125rem":"0.125rem",
-    "0.250rem":"0.250rem",
-    "0.500rem":"0.500rem",
+    "0.125rem": "0.125rem",
+    "0.250rem": "0.250rem",
+    "0.500rem": "0.500rem",
     ".75rem": ".75rem",
     "1rem": "1rem",
     "1.25rem": "1.25rem",
@@ -160,7 +163,7 @@ export const theme = {
     "20rem": "20rem",
     "24rem": "24rem",
   },
-  width:{
+  width: {
     "200px": "12.5rem",
     "250px": "15rem",
     "275px": "17.187rem",
@@ -169,20 +172,26 @@ export const theme = {
     "400px": "25rem",
     "500px": "31.25rem",
     "600px": "37.5rem",
-  }
+  },
 };
 
 export default createGlobalStyle`
+
+
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: 0;
+
+    vertical-align: top;
+
   }
   
   body {
-    background: ${theme.colors.gray[300]};
-    color:${theme.colors.orange[400]};
+    background: ${theme.colors.background};
+    color:${theme.colors.textColor};
     -webkit-font-smoothing: antialiased;
   }
 
@@ -193,9 +202,7 @@ export default createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6, strong {
     font-weight:  ${theme.fontWeights.bold};
-    color: ${theme.colors.pink[600]};
-
-
+    color: ${theme.colors.pink[800]};
   }
 
   p{
@@ -204,16 +211,12 @@ export default createGlobalStyle`
     
   }
 
-
-  
-
-  .Main{
-    display:flex;
-    flex-direction:row;
-    with:100%;
-    
+  a, a:link, a:visited, a:active {
+    color: ${theme.colors.textColor};
+    text-decoration: none;
   }
-
-
+  a:hover{
+    filter: drop-shadow(1px 0px 0px black) invert(40%);
+  }
 
 `;
