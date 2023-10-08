@@ -50,6 +50,10 @@ export const ContactInfo = {
                 "Content": "Rafael_chumansantana@outlook.com",
                 "MailTo": "mailto:rafael_chumansantana@outlook.com?subject=Could+we+schedule+a+meeting%3F"
             },
+            "GitHub": { 
+                "Name": "GitHub", 
+                "Content": "https://github.com/RafaelChuman",
+            },
         }
     },
     "Skills": {
@@ -81,6 +85,6 @@ export const ContactInfo = {
             },
         }
     },
-    "ProfileImage": { "Alt": "Chuman", "Content": "https://media.licdn.com/dms/image/D4E35AQGMKjxpH4blxQ/profile-framedphoto-shrink_200_200/0/1691546748968?e=1696705200&v=beta&t=aHUl_cAr6eGBNq3st4_J9YjcJ8c4K6nzehMcbyplG4Q" },
+    "ProfileImage": { "Alt": "Chuman", "Content": "https://avatars.githubusercontent.com/u/91433832?v=4" },
     "BannerImage": { "Alt": "Codding", "Content": "https://media.licdn.com/dms/image/D4E16AQEkiKekppH_xw/profile-displaybackgroundimage-shrink_350_1400/0/1691547286620?e=1701302400&v=beta&t=bUeQW4dBz9hnCFeOrYK3xKY1mLiKwz49EtVgURw3iws" },
 }

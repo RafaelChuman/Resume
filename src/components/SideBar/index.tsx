@@ -1,5 +1,5 @@
 import React from "react";
-import { RiWhatsappLine, RiLinkedinFill } from "react-icons/ri";
+import { RiWhatsappLine, RiLinkedinFill, RiGithubFill } from "react-icons/ri";
 import { MdOutlineMail } from "react-icons/md";
 
 import { ContactInfo } from "@/mocks/pt-br";
@@ -27,7 +27,7 @@ export function SideBar() {
           href={
             ContactInfo.ContactMe.Content.Phone.WhatsAppLink +
             ContactInfo.ContactMe.Content.Phone.ContactText
-          }
+          } target="_blank"
         >
           <div className="Info">
             <p>
@@ -39,7 +39,7 @@ export function SideBar() {
           </div>
         </a>
 
-        <a href={"http://" + ContactInfo.ContactMe.Content.LinkedIn.Content}>
+        <a href={"http://" + ContactInfo.ContactMe.Content.LinkedIn.Content} target="_blank">
           <div className="Info">
             <p>
               <RiLinkedinFill /> &nbsp;{" "}
@@ -49,13 +49,22 @@ export function SideBar() {
           </div>
         </a>
 
-        <a href={ContactInfo.ContactMe.Content.Email.MailTo}>
+        <a href={ContactInfo.ContactMe.Content.Email.MailTo} target="_blank">
           <div className="Info">
             <p>
               <MdOutlineMail /> &nbsp;{" "}
               {ContactInfo.ContactMe.Content.Email.Name}
             </p>
             <p>{ContactInfo.ContactMe.Content.Email.Content}</p>
+          </div>
+        </a>
+        <a href={ContactInfo.ContactMe.Content.GitHub.Content} target="_blank">
+          <div className="Info">
+            <p>
+              <RiGithubFill /> &nbsp;{" "}
+              {ContactInfo.ContactMe.Content.GitHub.Name}
+            </p>
+            <p>{ContactInfo.ContactMe.Content.GitHub.Content}</p>
           </div>
         </a>
       </div>
